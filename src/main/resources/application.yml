@@ -1,0 +1,10 @@
+application:
+  name: payments-api
+
+server:
+  port: 9090
+  servlet:
+    context-path: /api/v1/payments
+
+payments:
+  default-url: https://test1.e-collect.com/app_express/webservice/eCollectWebservicesv2.asmx
