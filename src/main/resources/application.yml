@@ -2,7 +2,7 @@ application:
   name: payments-api
 
 server:
-  port: 9090
+  port: 2200
   servlet:
     context-path: /api/v1/payments
 
