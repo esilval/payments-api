@@ -28,3 +28,11 @@ mvn clean install
 ```
 mvn spring-boot:run
 ```
+
+This project generates a WAR file as its artifact. To generate the WAR executable, please run this command:
+
+```
+mvn clean package
+```
+
+Then, go to `/target` folder and get the generated WAR executable file. 
