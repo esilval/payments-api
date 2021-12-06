@@ -89,16 +89,16 @@ public class PaymentConverter {
         references.add(detail.getEmail());
         references.add(detail.getAddress());
         references.add(detail.getPhoneNumber());
+        references.add(detail.getCity());
         references.add(detail.getCountry());
         references.add(detail.getMaterialCode());
-        references.add(detail.getSettlementNumber());
         references.add(detail.getBenefitCenter());
         references.add(detail.getFacultyCode());
+        references.add(detail.getClped());
         references.add(nonNull(detail.getStartDate()) ? convertLocalDateToString(detail.getStartDate()) : "0");
         references.add(nonNull(detail.getEndDate()) ? convertLocalDateToString(detail.getEndDate()) : "0");
-        references.add(detail.getClped());
-        references.add(detail.getCity());
         references.add(detail.getPinalu());
+        references.add(detail.getOrderNumber());
         return references;
     }
 
@@ -114,16 +114,16 @@ public class PaymentConverter {
                 .email(references.get(3))
                 .address(references.get(4))
                 .phoneNumber(references.get(5))
-                .country(references.get(6))
-                .materialCode(references.get(7))
-                .settlementNumber(references.get(8))
+                .city(references.get(6))
+                .country(references.get(7))
+                .materialCode(references.get(8))
                 .benefitCenter(references.get(9))
                 .facultyCode(references.get(10))
-                .startDate("0".equals(references.get(11)) ? null : convertStringToLocalDate(references.get(11), BASE_DATE_FORMAT))
-                .endDate("0".equals(references.get(12)) ? null : convertStringToLocalDate(references.get(12), BASE_DATE_FORMAT))
-                .clped(references.get(13))
-                .city(references.get(14))
-                .pinalu(references.get(15))
+                .clped(references.get(11))
+                .startDate("0".equals(references.get(12)) ? null : convertStringToLocalDate(references.get(12), BASE_DATE_FORMAT))
+                .endDate("0".equals(references.get(13)) ? null : convertStringToLocalDate(references.get(13), BASE_DATE_FORMAT))
+                .pinalu(references.get(14))
+                .orderNumber(references.get(15))
                 .build();
     }
 

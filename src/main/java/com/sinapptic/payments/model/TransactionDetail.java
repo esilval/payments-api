@@ -27,11 +27,11 @@ public class TransactionDetail {
 
     private String phoneNumber;
 
+    private String city;
+
     private String country;
 
     private String materialCode;
-
-    private String settlementNumber;
 
     private String benefitCenter;
 
@@ -49,6 +49,6 @@ public class TransactionDetail {
 
     private String pinalu;
 
-    private String city;
+    private String orderNumber;
 
 }
